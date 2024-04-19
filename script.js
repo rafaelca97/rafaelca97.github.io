@@ -19,7 +19,7 @@ window.onmousemove = function(e){
 };
 
 window.onresize = function(){
-    context.canvas.width  = document.documentElement.clientWidth;
+    context.canvas.width  = document.documentElement.clientWidth * ratio;
     context.canvas.height = document.documentElement.clientHeight;
     cb = stage.getBoundingClientRect();
 };
