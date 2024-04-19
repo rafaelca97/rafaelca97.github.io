@@ -601,44 +601,36 @@ a:active.btn {
 
 
 
-@media only screen and (max-device-width: 844px) {
-  
-  body {
-    font-size: 16px; 
+@media (max-device-width: 900.99px) and (orientation: landscape) {
+  .top-nav {
+    right: 30px;
   }
 
-  .top-nav {
-    right: 10px; 
+  #imagen {
+    max-width: 100%;
+
+  }
+
+  .mainTitle-1 {
+    font-size: 16px;
   }
 
   .mainTitle-2 {
-    font-size: 46px; 
+    font-size: 40px;
   }
 
-  .buttonCV {
-    margin-top: 20px;
+  .mainTitle-3 {
+    font-size: 20px;
   }
+
+  .mainTitle-4 {
+    font-size: 8px;
+  }
+  .line {
+    width: 80px;
+  }
+
 }
-
-@media only screen and (max-device-width: 844px) and (orientation: landscape) {
-
-  body {
-    font-size: 14px; 
-  }
-
-  .top-nav {
-    right: 30px; 
-  }
-
-  .mainTitle-2 {
-    font-size: 26px;
-  }
-
-  .buttonCV {
-    margin-top: 10px;
-  }
-}
-
 
 
 @media (max-width: 834.98px) {
