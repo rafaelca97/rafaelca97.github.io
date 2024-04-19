@@ -44,12 +44,13 @@ canvas {
 
 a {
   color: #D8D4CC; 
-  text-decoration: none;
+  text-decoration: none; 
 }
 
 a:hover {
-  color: #ffffff;
+  color: #ffffff; 
 }
+
 
 
 .top-nav {
@@ -480,7 +481,27 @@ a:active.btn {
     object-fit: cover;
     opacity: 0.5;
 }
-/*RESPONSIVE*/
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  a {
+      color: #D8D4CC;
+      text-decoration: none;
+  }
+  a:hover {
+      color: #ffffff;
+  }
+}
+
+@-moz-document url-prefix() {
+  a {
+      color: #D8D4CC;
+      text-decoration: none;
+  }
+  a:hover {
+      color: #ffffff;
+  }
+}
+
 
 @media (max-width: 1399.98px) {
 
