@@ -121,7 +121,7 @@ a:hover {
 
 .titleWeb,
 .imagenWeb {
-    margin-top: 100px;
+    margin-top: 20%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -487,15 +487,15 @@ a:active.btn {
 
 
   .mainTitle-1 {
-    font-size: 58px;
+    font-size: 52px;
   }
 
   .mainTitle-2 {
-    font-size: 66px;
+    font-size: 60px;
   }
 
   .line {
-    width: 180px;
+    width: 160px;
   }
 
   .mainTitle-3 {
@@ -507,7 +507,7 @@ a:active.btn {
   }
 
   .buttonCV {
-    margin-top: 10px;
+    margin-top: 8px;
   }
 
 }
