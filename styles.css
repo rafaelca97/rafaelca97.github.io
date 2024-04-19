@@ -42,7 +42,15 @@ canvas {
 }
 
 
-/*ELEMENTOS DE NAVEGACIÓN*/
+a {
+  color: #D8D4CC; 
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffffff;
+}
+
 
 .top-nav {
     
