@@ -19,10 +19,16 @@ window.onmousemove = function(e){
 };
 
 window.onresize = function(){
-    context.canvas.width  = document.documentElement.clientWidth * ratio;
+    context.canvas.width  = document.documentElement.clientWidth;
     context.canvas.height = document.documentElement.clientHeight;
     cb = stage.getBoundingClientRect();
 };
+
+window.addEventListener('resize', () => {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+  });
+  
 
 window.onresize();
 
@@ -63,7 +69,7 @@ function render(){
 
 function getV(dot) {
     var d = getDistance(dot, mouse);
-    dot.size = (150-d)/30;
+    dot.size = (150-d)/20;
     dot.size = dot.size < 1 ? 1 : dot.size;
 
     dot.angle = getAngle(dot, mouse);
