@@ -121,7 +121,7 @@ a:hover {
 
 .titleWeb,
 .imagenWeb {
-    margin-top: 5%;
+    margin-top: 20%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
