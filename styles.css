@@ -470,6 +470,7 @@ a:active.btn {
     pointer-events: none;
     background-color: transparent;
     overflow: hidden; 
+    opacity: 0.5;
 }
 
 .video-container video {
@@ -568,15 +569,6 @@ a:active.btn {
 
 
 @media (max-width: 939.98px) {
-
-  .line {
-    width: 130px;
-  }
-
-}
-
-@media (max-width: 834.98px) {
-
   .top-nav {
     right: 30px;
   }
@@ -601,6 +593,15 @@ a:active.btn {
   .mainTitle-4 {
     font-size: 24px;
   }
+  .line {
+    width: 130px;
+  }
+
+}
+
+@media (max-width: 834.98px) {
+
+
 
   .line {
     width: 110px;
