@@ -926,35 +926,3 @@ a:active.btn {
 
 }
 
-
-
-@media (max-device-height: 395.99px){
-  .top-nav {
-    right: 30px;
-  }
-
-  #imagen {
-    max-width: 100%;
-
-  }
-
-  .mainTitle-1 {
-    font-size: 10px;
-  }
-
-  .mainTitle-2 {
-    font-size: 24px;
-  }
-
-  .mainTitle-3 {
-    font-size: 14px;
-  }
-
-  .mainTitle-4 {
-    font-size: 6px;
-  }
-  .line {
-    width: 30px;
-  }
-
-}
