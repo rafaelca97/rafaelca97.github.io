@@ -1,54 +1,51 @@
 var scene = document.getElementById('grid');
 var parallaxInstance = new Parallax(scene);
-var stage        = document.querySelector('#dots'),
-    cb           = stage.getBoundingClientRect(),
+var stage = document.querySelector('#dots'),
+    cb = stage.getBoundingClientRect(),
 
-    context          = stage.getContext('2d'),
+    context = stage.getContext('2d'),
 
-    ratio        = window.devicePixelRatio || 1,
-    mouse        = {x: 0, y: 0},
-    dots         = [],
-    wide         = 46,
-    high         = wide/1.8,
-    size         = 30,
-    padding      = 0
+    ratio = window.devicePixelRatio || 1,
+    mouse = {x: 0, y: 0},
+    dots = [],
+    wide = 46,
+    high = wide/1.8,
+    size = 30,
+    padding = 0;
 
 window.onmousemove = function(e){
-    mouse.x = e.pageX * ratio;
-    mouse.y = e.pageY * ratio;
-}
+    mouse.x = e.pageX;
+    mouse.y = e.pageY;
+};
 
 window.onresize = function(){
-    context.canvas.width  = document.documentElement.clientWidth * ratio;
+    context.canvas.width  = document.documentElement.clientWidth;
     context.canvas.height = document.documentElement.clientHeight;
     cb = stage.getBoundingClientRect();
-}
+};
 
 window.onresize();
 
 function create(){
-  var d = 20;
-  for(var i=-1; ++i<wide;){
-      var x = Math.floor((((cb.width-padding*2) / (wide-1)) * i) + padding);
+    var d = 20;
+    for(var i=-1; ++i<wide;){
+        var x = Math.floor((((cb.width-padding*2) / (wide-1)) * i) + padding);
 
-      for(var j=-1; ++j<high;){
+        for(var j=-1; ++j<high;){
 
-          var y = Math.floor((((cb.height-padding*2) / (high-1)) * j) + padding);
+            var y = Math.floor((((cb.height-padding*2) / (high-1)) * j) + padding);
 
-          dots.push({
-              x: x,
-              y: y,
-              ox: x,
-              oy: y
-          });
-      }
-  }
+            dots.push({
+                x: x,
+                y: y,
+                ox: x,
+                oy: y
+            });
+        }
+    }
 }
 
-
 create();
-
-
 
 function render(){
     context.clearRect(0, 0, context.canvas.width, context.canvas.height);
@@ -57,18 +54,16 @@ function render(){
     for(var i=1;i<dots.length;i++){
         var s = dots[i];
 
-        var v = getV(s)
+        var v = getV(s);
 
         context.circle(s.x + v.x, s.y + v.y, s.size, true);
         context.fill();
     }
-
-    
 }
 
 function getV(dot) {
     var d = getDistance(dot, mouse);
-    dot.size = (150-d)/30
+    dot.size = (150-d)/30;
     dot.size = dot.size < 1 ? 1 : dot.size;
 
     dot.angle = getAngle(dot, mouse);
@@ -76,7 +71,7 @@ function getV(dot) {
     return {
         x: (d > 1 ? 20 : d) * Math.cos(dot.angle * Math.PI / 180),
         y: (d > 1 ? 20 : d) * Math.sin(dot.angle * Math.PI / 180)
-    }
+    };
 }
 
 function getAngle(obj1, obj2){
@@ -96,7 +91,7 @@ CanvasRenderingContext2D.prototype.circle = function (x, y, r) {
     this.beginPath();
     this.arc(x, y, r, 0, 2 * Math.PI, false);
     this.closePath();
-}
+};
 
 window.requestAnimFrame = (function(){
     return  window.requestAnimationFrame   ||
@@ -107,17 +102,10 @@ window.requestAnimFrame = (function(){
         };
 })();
 
-
-
 (function animloop(){
-    
     render();
-
     requestAnimationFrame(animloop);
-    
 })();
-
-
 
 
 const canvas = document.querySelector("#trail");
