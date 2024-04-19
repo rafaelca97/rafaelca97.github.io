@@ -601,7 +601,7 @@ a:active.btn {
 
 
 /* Reglas de medios para iPhone 12 */
-@media only screen and (max-device-width: 844.99px) and (orientation: landscape) {
+@media only screen and (max-device-width: 900.99px) and (orientation: landscape) {
   .top-nav {
     right: 30px;
   }
