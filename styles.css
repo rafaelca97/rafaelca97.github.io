@@ -112,6 +112,7 @@ a:hover {
 
 
 .inicioWeb {
+  margin-top: 5%;
     position: relative;
     display: flex;
     z-index: 4;
@@ -121,7 +122,6 @@ a:hover {
 
 .titleWeb,
 .imagenWeb {
-    margin-top: 200000px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
