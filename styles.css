@@ -599,9 +599,41 @@ a:active.btn {
 
 }
 
+
+/* Reglas de medios para iPhone 12 */
+@media only screen and (max-device-width: 844px) and (orientation: landscape) {
+  .top-nav {
+    right: 30px;
+  }
+
+  #imagen {
+    max-width: 100%;
+
+  }
+
+  .mainTitle-1 {
+    font-size: 34px;
+  }
+
+  .mainTitle-2 {
+    font-size: 54px;
+  }
+
+  .mainTitle-3 {
+    font-size: 30px;
+  }
+
+  .mainTitle-4 {
+    font-size: 16px;
+  }
+  .line {
+    width: 130px;
+  }
+
+}
+
+
 @media (max-width: 834.98px) {
-
-
 
   .line {
     width: 110px;
