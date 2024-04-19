@@ -601,7 +601,7 @@ a:active.btn {
 
 
 
-@media (max-device-width: 844.99px) {
+@media (max-device-width: 844.99px) and (max-device-height: 400px){
   .top-nav {
     right: 30px;
   }
