@@ -121,7 +121,7 @@ a:hover {
 
 .titleWeb,
 .imagenWeb {
-    margin-top: 5%;
+
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -129,12 +129,14 @@ a:hover {
 }
 
 .titleWeb {
+    margin-top: 5%;
     margin-left: 50px;
     flex-direction: column;
     flex: 1;
 }
 
 .imagenWeb {
+    margin-top: 15%;
     flex: 1;
     margin-right: 50px;
     flex-direction: column;
@@ -633,38 +635,6 @@ a:active.btn {
 }
 
 
-@media (max-device-height: 400px){
-  .top-nav {
-    right: 30px;
-  }
-
-  #imagen {
-    max-width: 100%;
-
-  }
-
-  .mainTitle-1 {
-    font-size: 16px;
-  }
-
-  .mainTitle-2 {
-    font-size: 40px;
-  }
-
-  .mainTitle-3 {
-    font-size: 20px;
-  }
-
-  .mainTitle-4 {
-    font-size: 8px;
-  }
-  .line {
-    width: 80px;
-  }
-
-}
-
-
 @media (max-width: 834.98px)  {
 
   .line {
@@ -921,6 +891,39 @@ a:active.btn {
   
   .footerTitle-3 {
     font-size: 30px;
+  }
+
+}
+
+
+
+@media (max-device-height: 395.99px){
+  .top-nav {
+    right: 30px;
+  }
+
+  #imagen {
+    max-width: 100%;
+
+  }
+
+  .mainTitle-1 {
+    font-size: 16px;
+  }
+
+  .mainTitle-2 {
+    font-size: 40px;
+  }
+
+  .mainTitle-3 {
+    font-size: 20px;
+  }
+
+  .mainTitle-4 {
+    font-size: 8px;
+  }
+  .line {
+    width: 80px;
   }
 
 }
