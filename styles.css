@@ -647,7 +647,7 @@ a:active.btn {
 @media (max-width: 776.98px) {
 
   #imagen {
-    max-width: 110%;
+    max-width: 100%;
 
   }
 
@@ -657,17 +657,21 @@ a:active.btn {
   }
 
   .mainTitle-2 {
-    font-size: 54px;
+    font-size: 36px;
 
   }
 
   .mainTitle-4 {
 
-    font-size: 24px;
+    font-size: 18px;
   }
 
   .line {
     width: 100px;
+  }
+
+  .buttonCV {
+    margin-top: 0px;
   }
 }
 
