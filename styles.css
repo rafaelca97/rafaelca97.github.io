@@ -634,7 +634,7 @@ a:active.btn {
 
 }
 
-@media (max-device-width: 844.99px) and (orientation: landscape){
+@media (max-device-width: 400.99px) and (orientation: landscape){
 
   .mainTitle-1 {
     font-size: 30px;
