@@ -603,7 +603,7 @@ a:active.btn {
 
 
 
-@media (max-device-width: 844.99px) and (orientation: portrait){
+@media (max-device-width: 844.99px) {
   .top-nav {
     right: 30px;
   }
