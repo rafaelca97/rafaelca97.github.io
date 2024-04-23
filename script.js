@@ -2,9 +2,7 @@ var scene = document.getElementById('grid');
 var parallaxInstance = new Parallax(scene);
 var stage = document.querySelector('#dots'),
     cb = stage.getBoundingClientRect(),
-
     context = stage.getContext('2d'),
-
     ratio = window.devicePixelRatio || 1,
     mouse = {x: 0, y: 0},
     dots = [],
