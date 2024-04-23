@@ -614,19 +614,19 @@ a:active.btn {
   }
 
   .mainTitle-1 {
-    font-size: 16px;
+    font-size: 45px;
   }
 
   .mainTitle-2 {
-    font-size: 40px;
+    font-size: 60px;
   }
 
   .mainTitle-3 {
-    font-size: 20px;
+    font-size: 50px;
   }
 
   .mainTitle-4 {
-    font-size: 8px;
+    font-size: 40px;
   }
   .line {
     width: 80px;
@@ -923,6 +923,7 @@ a:active.btn {
 
   .mainTitle-4 {
     font-size: 16px;
+    margin-top: 6px;
   }
   .line {
     width: 60px;
